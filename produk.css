@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  padding: 40px 20px;
+  background-color: #f4f4f9;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Kontainer utama kartu-kartu */
+.produk-list {
+  display: flex;
+  justify-content: center; /* Menyusun kartu di tengah */
+  gap: 24px;               /* Jarak antar kartu */
+  flex-wrap: wrap;         /* Agar responsif di layar kecil */
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Styling tiap kartu */
+.kartu {
+  display: flex;
+  flex-direction: column;  /* Isi kartu tersusun vertikal */
+  align-items: center;     /* Menengahkan teks & tombol */
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 24px;
+  width: 220px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.kartu h3 {
+  font-size: 1.25rem;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.kartu .harga {
+  color: #16a34a;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 16px;
+}
+
+.kartu button {
+  padding: 8px 20px;
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background-color 0.2s ease;
+}
+
+.kartu button:hover {
+  background-color: #1d4ed8;
+}

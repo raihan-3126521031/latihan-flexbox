@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;   /* item pindah ke baris baru jika tidak muat */
+    gap: 10px;         /* jarak antar item, menggantikan margin */
+    background-color: #ddd;
+    padding: 10px;
+}
+
+.item {
+    background-color: lightblue;
+    border: 2px solid navy;
+    padding: 20px;
+    font-size: 20px;
+}
